@@ -16,9 +16,9 @@ uploadArchives {
     repositories {
         mavenDeployer {
             //设置插件的GAV参数
-            pom.groupId = 'plugin'
-            pom.artifactId = 'runplugin'
-            pom.version = 1.0
+            pom.groupId = 'com.xtc.gradleplugin'
+            pom.artifactId = 'helloplugin'
+            pom.version = 1.3
             //文件发布到下面目录
             repository(url: uri('../release'))
         }

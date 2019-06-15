@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: RunPlugin
-apply plugin: 'helloplugin'
 
 buildscript {
     repositories {
@@ -9,12 +8,14 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'plugin:helloplugin:1.0'
+        classpath 'com.xtc.gradleplugin:helloplugin:1.3'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
+
+apply plugin: 'helloplugin'
 
 android {
     compileSdkVersion 28
