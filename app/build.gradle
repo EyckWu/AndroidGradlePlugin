@@ -1,5 +1,20 @@
 apply plugin: 'com.android.application'
 apply plugin: RunPlugin
+apply plugin: 'helloplugin'
+
+buildscript {
+    repositories {
+        maven{
+            url uri('../release')
+        }
+    }
+    dependencies {
+        classpath 'plugin:helloplugin:1.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
 
 android {
     compileSdkVersion 28
